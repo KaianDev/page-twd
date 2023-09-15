@@ -18,7 +18,7 @@ export const MenuHamburger = () => {
             </div>
 
             {menu && (
-                <ul className="absolute top-9 right-0 min-w-max bg-black/70 flex flex-col rounded-md overflow-hidden uppercase shadow-xl shadow-white/20">
+                <ul className="absolute top-9 right-0 min-w-max bg-black/70 text-white flex flex-col rounded-md overflow-hidden uppercase shadow-xl shadow-white/20">
                     <li className="hover:bg-black/90 p-3 cursor-pointer">
                         <a href="#">Curiosidades</a>
                     </li>
