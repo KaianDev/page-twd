@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MenuHamburger } from "./MenuHamburger";
 import { Bebas_Neue } from "next/font/google";
 
@@ -7,8 +8,12 @@ const bebas = Bebas_Neue({
 });
 
 export const Header = () => {
+    const [menu, setMenu] = useState(false);
+    const toggleMenu = () => setMenu(!menu);
+    const closeMenu = () => menu && setMenu(false);
+
     return (
-        <header className="relative">
+        <header onClick={closeMenu} className="relative">
             <div className="container mx-auto px-4 sm:px-4 flex min-h-[65vh] sm:min-h-screen flex-col">
                 <nav className="py-3 flex justify-between items-center">
                     <a href="/">
@@ -40,7 +45,8 @@ export const Header = () => {
                             </a>
                         </li>
                     </ul>
-                    <MenuHamburger />
+
+                    <MenuHamburger menu={menu} toggleMenu={toggleMenu} />
                 </nav>
 
                 <section className="flex-1 flex flex-col items-start justify-center">
@@ -62,7 +68,8 @@ export const Header = () => {
                     </div>
                     <a
                         href="#"
-                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}>
+                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}
+                    >
                         Assistir agora
                     </a>
                 </section>

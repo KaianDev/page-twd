@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-export const MenuHamburger = () => {
-    const [menu, setMenu] = useState(false);
+type Props = {
+    menu: boolean;
+    toggleMenu: () => void;
+};
 
+export const MenuHamburger = ({ menu, toggleMenu }: Props) => {
     return (
-        <div onClick={() => setMenu(!menu)} className="relative sm:hidden">
+        <div onClick={toggleMenu} className="relative sm:hidden">
             <div className="sm:hidden flex flex-col h-8 justify-between p-1 rounded-sm cursor-pointer border border-transparent hover:border-white group">
                 <span
                     className={`h-1 bg-white rounded-sm transition-all ease-linear 
                     ${menu ? "w-7 group-hover:w-9" : "w-9 group-hover:w-7"}
-                `}></span>
+                `}
+                ></span>
                 <span
                     className={`h-1 bg-white rounded-sm transition-all ease-linear 
                     ${menu ? "w-8 group-hover:w-9" : "w-9 group-hover:w-8"}
-                `}></span>
+                `}
+                ></span>
                 <span className="w-9 h-1 bg-white rounded-sm"></span>
             </div>
 
