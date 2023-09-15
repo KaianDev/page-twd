@@ -53,7 +53,7 @@ export const Header = () => {
                         <p className="uppercase text-xl font-bold mb-4 text-primary sm:text-secondary-dark sm:text-2xl text-shadow">
                             Entre no mundo aterrorizante dos mortos vivos
                         </p>
-                        <p className="text sm:text-xl">
+                        <p className="text text-white sm:text-xl">
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
                             in some form, by injected humour, or randomized
