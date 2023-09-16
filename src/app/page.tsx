@@ -1,13 +1,15 @@
 "use client";
 
-import { ConfrontationSection } from "@/components/ConfrantotionSection";
 import { Header } from "@/components/Header";
+import { CuriositySection } from "@/components/CuriositySection";
+import { WhereWatchSection } from "@/components/WhereWatchSection";
 
 const Page = () => {
     return (
         <>
             <Header />
-            <ConfrontationSection />
+            <CuriositySection />
+            <WhereWatchSection />
         </>
     );
 };

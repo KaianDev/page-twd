@@ -25,12 +25,12 @@ export const Header = () => {
                     </a>
                     <ul className="hidden text-white font-bold text-[14px] md:text-[16px] gap-[24px] uppercase sm:flex ">
                         <li>
-                            <a href="#" className="hover:underline">
+                            <a href="#curiosity" className="hover:underline">
                                 Curiosidades
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">
+                            <a href="#where-watch" className="hover:underline">
                                 Onde Assistir
                             </a>
                         </li>
