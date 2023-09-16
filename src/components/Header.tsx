@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { MenuHamburger } from "./MenuHamburger";
 import { Bebas_Neue } from "next/font/google";
 
@@ -12,10 +14,18 @@ export const Header = () => {
     const toggleMenu = () => setMenu(!menu);
     const closeMenu = () => menu && setMenu(false);
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <header onClick={closeMenu} className="relative">
             <div className="container mx-auto px-4 sm:px-4 flex min-h-[65vh] sm:min-h-screen flex-col">
-                <nav className="py-3 flex justify-between items-center">
+                <nav
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    className="py-3 flex justify-between items-center">
                     <a href="/">
                         <img
                             src="/assets/amc-logo.svg"
@@ -53,20 +63,28 @@ export const Header = () => {
                         src="/assets/logo-twd.png"
                         alt=""
                         className="w-[70%] sm:max-w-[50vw] mb-4"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
                     />
-                    <div className="w-[70%] sm:max-w-[50vw]">
+                    <div
+                        className="w-[70%] sm:max-w-[50vw]"
+                        data-aos="fade-right"
+                        data-aos-duration="1000">
                         <p className="uppercase text-xl font-bold mb-4 text-primary sm:text-secondary-dark sm:text-2xl text-shadow">
                             Entre no mundo aterrorizante dos mortos vivos
                         </p>
                         <p className="text text-white sm:text-xl">
-                            The Walking Dead é uma série de ação que aborda o cotidiano de um
-                            grupo de pessoas tentando sobreviver em um cenário
-                            dominado por mortos-vivos.
+                            The Walking Dead é uma série de ação que aborda o
+                            cotidiano de um grupo de pessoas tentando sobreviver
+                            em um cenário dominado por mortos-vivos.
                         </p>
                     </div>
                     <a
                         href="#"
-                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}>
+                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        >
                         Assistir agora
                     </a>
                 </section>

@@ -1,4 +1,7 @@
 import { Bebas_Neue } from "next/font/google";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const bebas = Bebas_Neue({
     weight: ["400"],
@@ -6,6 +9,11 @@ const bebas = Bebas_Neue({
 });
 
 export const WhereWatchSection = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <section
             id="where-watch"
@@ -14,8 +22,13 @@ export const WhereWatchSection = () => {
                 src="/assets/rick.png"
                 alt="Rick segurando uma arma"
                 className="max-w-[250px] sm:max-w-[200px] lg:max-w-sm"
+                data-aos="fade-right"
+                data-aos-duration="1000"
             />
-            <div className="sm:flex-1 text-center sm:text-start xl:text-center">
+            <div
+                className="sm:flex-1 text-center sm:text-start xl:text-center"
+                data-aos="zoom-in"
+                data-aos-duration="1000">
                 <h2
                     className={`text-primary uppercase ${bebas.className} sm:mb-4 text-2xl sm:text-5xl lg:mb-6`}>
                     Assista em:
@@ -42,6 +55,8 @@ export const WhereWatchSection = () => {
                 src="/assets/daryl.png"
                 alt="Daryl segurando uma arma"
                 className="hidden xl:block max-w-[200px] lg:max-w-sm"
+                data-aos="fade-left"
+                data-aos-duration="1000"
             />
         </section>
     );
