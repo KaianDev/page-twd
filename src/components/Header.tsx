@@ -18,7 +18,7 @@ export const Header = () => {
                 <nav className="py-3 flex justify-between items-center">
                     <a href="/">
                         <img
-                            src="../assets/amc-logo.svg"
+                            src="/assets/amc-logo.svg"
                             alt="Logo AMC"
                             className="w-[55px] sm:w-[70px]"
                         />
@@ -45,13 +45,12 @@ export const Header = () => {
                             </a>
                         </li>
                     </ul>
-
                     <MenuHamburger menu={menu} toggleMenu={toggleMenu} />
                 </nav>
 
                 <section className="flex-1 flex flex-col items-start justify-center">
                     <img
-                        src="../assets/logo-twd.png"
+                        src="/assets/logo-twd.png"
                         alt=""
                         className="w-[70%] sm:max-w-[50vw] mb-4"
                     />
@@ -60,27 +59,19 @@ export const Header = () => {
                             Entre no mundo aterrorizante dos mortos vivos
                         </p>
                         <p className="text text-white sm:text-xl">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomized
-                            words which don't
+                            The Walking Dead é uma série de ação que aborda o cotidiano de um
+                            grupo de pessoas tentando sobreviver em um cenário
+                            dominado por mortos-vivos.
                         </p>
                     </div>
                     <a
                         href="#"
-                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}
-                    >
+                        className={`${bebas.className} px-4 py-3 sm:px-8 sm:py-5 mt-8 text-white text-2xl sm:text-4xl uppercase bg-secondary-dark rounded-tr-2xl border-4 border-secondary-light tracking-wide transition-all duration-300 hover:animate-pulse`}>
                         Assistir agora
                     </a>
                 </section>
             </div>
-            <div className="absolute top-0 left-0 right-0 bottom-0 -z-10 overflow-hidden">
-                <img
-                    src="../assets/bg.png"
-                    alt=""
-                    className="w-full h-full object-cover object-center-top sm:object-[60%]"
-                />
-            </div>
+            <div className="absolute top-0 left-0 right-0 bottom-0 -z-10 overflow-hidden bg-zombie"></div>
         </header>
     );
 };
