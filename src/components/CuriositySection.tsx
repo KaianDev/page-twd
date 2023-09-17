@@ -42,7 +42,7 @@ export const CuriositySection = () => {
                 data-aos-duration="1000"
                 data-aos-delay="300">
                 <h2
-                    className={`text-primary uppercase ${bebas.className} mb-4 text-2xl sm:text-5xl lg:mb-6`}>
+                    className={`text-primary uppercase ${bebas.className} mb-4 text-4xl sm:text-5xl lg:mb-6`}>
                     Confrontos Épicos
                 </h2>
                 <p className="mx-auto sm:text-xl lg:text-2xl">

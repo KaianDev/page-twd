@@ -30,7 +30,7 @@ export const WhereWatchSection = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000">
                 <h2
-                    className={`text-primary uppercase ${bebas.className} sm:mb-4 text-2xl sm:text-5xl lg:mb-6`}>
+                    className={`text-primary uppercase ${bebas.className} sm:mb-4 text-4xl sm:text-5xl lg:mb-6`}>
                     Assista em:
                 </h2>
                 <p className="text-white sm:text-xl lg:text-2xl">
@@ -40,14 +40,14 @@ export const WhereWatchSection = () => {
                 </p>
                 <div className="flex gap-2 sm:gap-4 mt-4 justify-center sm:justify-start xl:justify-center">
                     <img
-                        src="/assets/amc-logo.svg"
+                        src="/assets/amc-logo.png"
                         alt="Logo amc"
-                        className="max-w-[30px] sm:max-w-none"
+                        className="max-w-[40px] sm:max-w-[100px]"
                     />
                     <img
                         src="/assets/star-logo.png"
                         alt="Logo STAR+"
-                        className="max-w-[40px] sm:max-w-[144px]"
+                        className="max-w-[70px] sm:max-w-[144px]"
                     />
                 </div>
             </div>

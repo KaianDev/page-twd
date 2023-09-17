@@ -31,7 +31,7 @@ export const MenuHamburger = ({ menu, toggleMenu }: Props) => {
                         <a href="#where-watch">Onde Assistir</a>
                     </li>
                     <li className="hover:bg-black/90 p-3 cursor-pointer">
-                        <a href="#">Elenco</a>
+                        <a href="#cast">Elenco</a>
                     </li>
                     <li className="hover:bg-black/90 p-3 cursor-pointer">
                         <a href="#">Temporadas</a>
