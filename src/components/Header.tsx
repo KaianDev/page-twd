@@ -49,7 +49,7 @@ export const Header = () => {
                             </a>
                         </li>
                         <li className="hover:scale-110">
-                            <a href="#" className="hover:underline hover:text-primary">
+                            <a href="#seasons" className="hover:underline hover:text-primary">
                                 Temporadas
                             </a>
                         </li>

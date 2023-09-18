@@ -34,7 +34,7 @@ export const MenuHamburger = ({ menu, toggleMenu }: Props) => {
                         <a href="#cast">Elenco</a>
                     </li>
                     <li className="hover:bg-black/90 p-3 cursor-pointer">
-                        <a href="#">Temporadas</a>
+                        <a href="#seasons">Temporadas</a>
                     </li>
                 </ul>
             )}

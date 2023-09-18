@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Slab } from "next/font/google";
+import { useEffect, useRef, useState } from "react";
 
 const roboto = Roboto_Slab({
     weight: ["400", "500", "700"],
