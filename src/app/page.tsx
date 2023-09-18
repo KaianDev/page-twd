@@ -6,19 +6,18 @@ import { WhereWatchSection } from "@/components/WhereWatchSection";
 import { CastSection } from "@/components/CastSection";
 import { Footer } from "@/components/Footer";
 import { SeasonsSection } from "@/components/SeasonsSection";
-import { ButtonToTop } from "@/components/ButtonToTop";
+import { Layout } from "@/components/Layout";
 
 const Page = () => {
     return (
-        <>
+        <Layout>
             <Header />
             <CuriositySection />
             <WhereWatchSection />
             <CastSection />
             <SeasonsSection />
             <Footer />
-            <ButtonToTop />
-        </>
+        </Layout>
     );
 };
 

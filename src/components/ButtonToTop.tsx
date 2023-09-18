@@ -1,23 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { BsArrowUp } from "react-icons/bs";
 
-export const ButtonToTop = () => {
-    const [scroll, setScroll] = useState(0);
-    const html = useRef<HTMLElement>(null);
-    
-    useEffect(() => {
-        if (html.current?.scrollHeight) {
-            const scrollH = html.current.scrollHeight;
-            setScroll(scrollH);
-        }
-    }, [scroll]);
+type Props = {
+    onClick: () => void;
+};
 
+export const ButtonToTop = ({ onClick }: Props) => {
     return (
-        <div className="fixed bottom-6 right-6">
-            {scroll !== 0 && (
-                <button className="bg-primary text-white w-10 h-10 rounded-full flex justify-center items-center">
-                    Subir
-                </button>
-            )}
+        <div className="fixed bottom-10 right-6">
+            <button
+                onClick={onClick}
+                className="bg-primary text-white w-10 h-10 border-2 border-transparent rounded-full flex justify-center items-center text-2xl font-bold animate-bounce hover:border-primary hover:bg-transparent hover:text-primary"
+            >
+                <BsArrowUp />
+            </button>
         </div>
     );
 };
