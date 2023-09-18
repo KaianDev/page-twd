@@ -19,13 +19,6 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pt-BR">
-            <head>
-                <link
-                    rel="shortcut icon"
-                    href="/favicon.ico"
-                    type="image/x-icon"
-                />
-            </head>
             <body className={roboto.className}>{children}</body>
         </html>
     );
