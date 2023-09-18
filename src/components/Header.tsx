@@ -20,7 +20,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <header onClick={closeMenu} className="relative">
+        <header onClick={closeMenu} className="relative ">
             <div className="container mx-auto px-4 flex min-h-[75vh] sm:min-h-screen flex-col">
                 <nav
                     data-aos="fade-down"
@@ -32,24 +32,24 @@ export const Header = () => {
                             className="w-[55px] sm:w-[70px]"
                         />
                     </a>
-                    <ul className="hidden text-white font-bold text-[14px] md:text-[16px] gap-[24px] uppercase sm:flex ">
-                        <li>
-                            <a href="#curiosity" className="hover:underline">
+                    <ul className="hidden text-white font-bold gap-[24px] uppercase sm:flex ">
+                        <li className="hover:scale-110">
+                            <a href="#curiosity" className="hover:underline hover:text-primary">
                                 Curiosidades
                             </a>
                         </li>
-                        <li>
-                            <a href="#where-watch" className="hover:underline">
+                        <li className="hover:scale-110">
+                            <a href="#where-watch" className="hover:underline hover:text-primary">
                                 Onde Assistir
                             </a>
                         </li>
-                        <li>
-                            <a href="#cast" className="hover:underline">
+                        <li className="hover:scale-110">
+                            <a href="#cast" className="hover:underline hover:text-primary">
                                 Elenco
                             </a>
                         </li>
-                        <li>
-                            <a href="#" className="hover:underline">
+                        <li className="hover:scale-110">
+                            <a href="#" className="hover:underline hover:text-primary">
                                 Temporadas
                             </a>
                         </li>
