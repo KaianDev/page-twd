@@ -26,7 +26,7 @@ export const Footer = () => {
             <small className="block text-[12px] text-right text-zinc-800">
                 Developer by{" "}
                 <a
-                    href="https://github.com/KaianDev"
+                href="https://github.com/KaianDev" target="_blank"
                     className="hover:underline hover:text-sky-500">
                     KaianDev
                 </a>
