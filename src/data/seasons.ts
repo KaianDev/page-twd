@@ -64,7 +64,7 @@ export const seasons: Season[] = [
     {
         id: 11,
         title: 11,
-        body: "Connie e Virgil são perseguidos até um casarão habitado por um grupo de pessoas enlouquecidas, que recorreram ao canibalismo selvagem para sobreviver. A dupla consegue derrotar a maioria dos canibais e são resgatados por Kelly, Magna, Carol e Rosita, com as irmãs sendo finalmente reunidas. Enquanto isso, Daryl é forçado a torturar Frost, outro membro do grupo capturado, para revelar o paradeiro de Maggie. Enquanto vasculha com uma equipe de Ceifadores liderados por Leah, Daryl faz o seu melhor para despistá-los e proteger seus amigos.  ",
+        body: "Connie e Virgil são perseguidos até um casarão habitado por um grupo de pessoas enlouquecidas, que recorreram ao canibalismo selvagem para sobreviver. A dupla consegue derrotar a maioria dos canibais e são resgatados por Kelly, Magna, Carol e Rosita, com as irmãs sendo finalmente reunidas.  ",
         cover: "/assets/seasons/11.jpg",
     },
 ];
