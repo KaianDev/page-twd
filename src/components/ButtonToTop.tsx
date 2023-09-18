@@ -1,7 +1,7 @@
 import { BsArrowUp } from "react-icons/bs";
 
 type Props = {
-    onClick: () => void;
+    onClick: () => void
 };
 
 export const ButtonToTop = ({ onClick }: Props) => {

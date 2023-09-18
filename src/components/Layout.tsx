@@ -5,14 +5,10 @@ export const Layout = ({ children }: { children: ReactNode }) => {
     const [scroll, setScroll] = useState(0);
 
     useEffect(() => {
+        const testScroll = () => setScroll(window.scrollY);
         window.addEventListener("scroll", testScroll);
-
-
-    }, [scroll]);
-
-    const testScroll = () => {
-        setScroll(window.scrollY);
-    };
+        return () => window.removeEventListener("scroll", testScroll);
+    }, []);
 
     const toTop = () => {
         window.scrollTo({

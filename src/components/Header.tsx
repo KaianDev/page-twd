@@ -33,22 +33,22 @@ export const Header = () => {
                         />
                     </a>
                     <ul className="hidden text-white font-bold gap-[24px] uppercase sm:flex ">
-                        <li className="hover:scale-110">
+                        <li className="hover:scale-110 cursor-pointer">
                             <a href="#curiosity" className="hover:underline hover:text-primary">
                                 Curiosidades
                             </a>
                         </li>
-                        <li className="hover:scale-110">
+                        <li className="hover:scale-110 cursor-pointer">
                             <a href="#where-watch" className="hover:underline hover:text-primary">
                                 Onde Assistir
                             </a>
                         </li>
-                        <li className="hover:scale-110">
+                        <li className="hover:scale-110 cursor-pointer">
                             <a href="#cast" className="hover:underline hover:text-primary">
                                 Elenco
                             </a>
                         </li>
-                        <li className="hover:scale-110">
+                        <li className="hover:scale-110 cursor-pointer">
                             <a href="#seasons" className="hover:underline hover:text-primary">
                                 Temporadas
                             </a>
