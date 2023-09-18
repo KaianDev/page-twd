@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Slab } from "next/font/google";
-import { useEffect, useRef, useState } from "react";
 
 const roboto = Roboto_Slab({
     weight: ["400", "500", "700"],
@@ -20,9 +19,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pt-BR">
-            <body className={roboto.className}>
-                {children}
-            </body>
+            <head>
+                <link
+                    rel="shortcut icon"
+                    href="/favicon.ico"
+                    type="image/x-icon"
+                />
+            </head>
+            <body className={roboto.className}>{children}</body>
         </html>
     );
 }
